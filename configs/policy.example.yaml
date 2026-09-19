@@ -1,0 +1,30 @@
+# Any subset of the policy. Values shown are the defaults unless noted.
+env_tag: env
+owner_tag: owner
+allocation_tags: [team, app, env]
+nonprod_envs: [dev, test, staging, qa, sandbox]
+protect_tags:
+  do-not-optimize: "*"      # any value protects the resource
+protected_ids: []
+min_observed_days: 14
+idle_cpu_p95: 5
+target_cpu_util: 60
+target_mem_util: 75
+rightsize_max_cpu_p95: 70
+rightsize_min_saving_pct: 10
+unattached_days: 7
+snapshot_age_days: 90
+stopped_days: 30
+business_hours_per_week: 55
+schedule_max_active_hours: 60
+cold_days_infrequent: 90
+cold_days_archive: 365
+commitment_coverage: 0.8
+commitment_min_observed_days: 30
+commitment_term: 1y
+anomaly_min_days: 14
+anomaly_z: 4.0
+anomaly_min_extra_daily: 5
+anomaly_min_increase_pct: 10
+anomaly_recent_days: 3
+allocation_window_days: 30

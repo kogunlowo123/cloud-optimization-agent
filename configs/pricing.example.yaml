@@ -1,0 +1,10 @@
+# Override or add prices. Anything you leave out keeps the built-in illustrative default.
+instances:
+  - {provider: aws, name: m5.xlarge, family: m5, vcpu: 4, mem_gb: 16, hourly: 0.15, generation: 5, successor: m7i.xlarge}
+storage:
+  aws:
+    standard: {per_gb_month: 0.021}
+commitment_discount:
+  aws: {1y: 0.31}
+disk_per_gb:
+  aws: 0.08
