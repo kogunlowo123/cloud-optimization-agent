@@ -149,7 +149,7 @@ Exit codes: 0 success, 1 the saving gate failed, 2 invalid input.
 
 ## Configuration
 
-Environment variables use the `CLOUDOPT_` prefix, and `.env.example` documents each one.
+Supported Python versions are 3.10 to 3.13. Every environment variable uses the `CLOUDOPT_` prefix, is optional, and is documented with its default in `.env.example`. Provider API keys are only required when `CLOUDOPT_LLM_PROVIDER` is `openai` or `anthropic`; the default is `none`.
 
 | File | Purpose |
 | ---- | ------- |
