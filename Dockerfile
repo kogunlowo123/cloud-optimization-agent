@@ -15,5 +15,6 @@ COPY --from=build /dist/*.whl /tmp/
 RUN pip install /tmp/*.whl && rm /tmp/*.whl
 USER cloudopt
 WORKDIR /work
+HEALTHCHECK --interval=60s --timeout=10s --retries=3 CMD ["cloudopt", "catalog"]
 ENTRYPOINT ["cloudopt"]
 CMD ["catalog"]

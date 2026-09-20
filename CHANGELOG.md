@@ -5,6 +5,10 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Container `HEALTHCHECK` that runs `cloudopt catalog`.
+
 ## [0.1.0]
 
 ### Added
